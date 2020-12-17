@@ -2,12 +2,12 @@
 
 public class HealButton : MonoBehaviour
 {
-    [SerializeField] private HealthBar _healthBar;
+    [SerializeField] private Player _player;
 
     private int _healPower = 10;
 
     public void OnButtonClick()
     {
-        _healthBar.TakeHeal(_healPower);
+        _player.TakeHeal(_healPower);
     }
 }
